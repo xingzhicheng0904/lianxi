@@ -92,9 +92,51 @@ image{
     top: 40px;
     display: none;
 }
-
-
-
-
-
 /*na-bar结束*/
+
+
+/*header开始*/
+.header{
+    height: 100px;
+    position: relative;
+
+}
+
+
+.header-menu{
+    float: left;
+    margin-left: 185px;
+    height: 100px;
+    line-height: 100px;
+
+}
+
+.header-menu  .menu-item{
+    float: left;
+    padding-left:6px;
+    padding-right: 6px;
+}
+.header-menu a{
+    color: #333;
+    font-size: 16px; ;
+}
+.header-menu a:hover{
+    color: #ff6700;
+}
+
+.sub-menu{
+    height: 226px;
+    width: 100%;
+    border-top: 1px solid  #e0e0e0;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    background: red;
+    /*display: none;*/
+
+}
+.sub-menu li{
+    float: left;
+}
+
+/*header开始*/
