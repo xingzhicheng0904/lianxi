@@ -133,10 +133,50 @@ image{
     top: 100px;
     background: red;
     /*display: none;*/
+}
+
+
+
+
+.flags{
+    height: 17px;
+    line-height: 17px;
+    margin-bottom: 17px;
+
+}
+.flags span{
+    border: 1px solid #ff6700;
+    color: #ff6700;
+    font-size: 12px;
+    padding: 1px 14px;
+}
+.sub-menu li{
+    width: 204px;
+    height: 201px;
+    float: left;
+    text-align: center;
+}
+.p-img{
+    height: 110px;
+    display: block;
+    margin-bottom: 12px;
+}
+.p-title{
+    color: #333;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.p-price{
+    color: #ff6700;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
 
 }
 .sub-menu li{
-    float: left;
+    border-right: ;
 }
 
-/*header¿ªÊ¼*/
+
+/*header½áÊø*/
