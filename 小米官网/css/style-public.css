@@ -80,19 +80,38 @@ image{
     background: #ffff;
     color: #ff6700;
 }
+.cart:hover .cart-box{
+    display: block;
+    animation:show 0.5s ease-in forwards;
+
+}
+@keyframes show {
+    100%{
+        height: 85px;
+    }
+}
 .cart-box{
-    width: 250px;
-    height: 85px;
+    width: 300px;
+    height: 0px;
     padding-top; 15px;
-    background: white;
-    border: 2px solid #c0c0c0\9;
+    background: #ffffff;
+    border: 1px solid #e0e0e0 \9;
     box-shadow: 0 2px 10px rgba(0,0,0,0,15);
     position: absolute;
     right:0;
     top: 40px;
     display: none;
+
+    z-index: 1;
+    /*按优先级显示*/
+
 }
 /*na-bar结束*/
+
+
+
+
+
 
 
 /*header开始*/
@@ -116,6 +135,16 @@ image{
     padding-left:6px;
     padding-right: 6px;
 }
+.header-menu .menu-item:hover  .sub-menu{
+    display: block;
+    animation:slide  0.5s ease-in forwards;
+}
+@keyframes slide {
+    100%{
+        height: 226px;
+    }
+
+}
 .header-menu a{
     color: #333;
     font-size: 16px; ;
@@ -124,16 +153,32 @@ image{
     color: #ff6700;
 }
 
+
 .sub-menu{
-    height: 226px;
+    height: 0;
     width: 100%;
     border-top: 1px solid  #e0e0e0;
     position: absolute;
     left: 0;
     top: 100px;
-    background: red;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15px);
+    background: #ffffff;
     box-shadow: 0 3px 4px rgba(0,0,0,0.18) ;
     display: none;
+    overflow: hidden;
+    /*溢出隐藏*/
+}
+.sub-menu ul{
+    overflow: hidden;
+    width: 1224px;
+    margin: 0 auto;
+}
+.sub-menu li{
+    width: 204px;
+    height: 201px;
+    float: left;
+    text-align: center;
+    position: relative;
 }
 
 
@@ -151,12 +196,7 @@ image{
     font-size: 12px;
     padding: 1px 14px;
 }
-.sub-menu li{
-    width: 204px;
-    height: 201px;
-    float: left;
-    text-align: center;
-}
+
 .p-img{
     height: 110px;
     display: block;
@@ -175,9 +215,59 @@ image{
     font-size: 12px;
 
 }
-.sub-menu li{
-    border-right: ;
+.p-line{
+    width: 1px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 36px;
+    background: #e0e0e0;
 }
+.search{
+    width: 296px;
+    height: 50px;
+    float: right;
+    margin-top: 20px;
+    position: relative;
+
+
+}
+ .search-txt{
+     width: 222px;
+     height: 48px;
+     border: 1px  solid #e0e0e0;
+     border-right:0 ;
+     padding: 0 10px ;
+     float: left;
+     /*display: block;*/
+
+}
+ .search-btn {
+     background: #ffffff;
+     width: 52px;
+     height: 50px;
+     float: left;
+     border: 1px  solid #e0e0e0;
+     border-left:0 ;
+     cursor: pointer; /*鼠标变小手;*/
+     position: relative;
+     background: transparent;
+
+
+ }
+
+.icon-search{
+    position: absolute;
+    right: 19px;
+    top: 18px;
+
+   }
+/*.search i:hover{*/
+    /*background: #ff6700;*/
+    /*display: block;*/
+/**/
+/**/
+/*}*/
 
 
 /*header结束*/
