@@ -102,7 +102,7 @@ image{
     top: 40px;
     display: none;
 
-    z-index: 1;
+    z-index: 2;
     /*按优先级显示*/
 
 }
@@ -224,7 +224,7 @@ image{
     background: #e0e0e0;
 }
 .search{
-    width: 296px;
+    width: 300px;
     height: 50px;
     float: right;
     margin-top: 20px;
@@ -236,7 +236,6 @@ image{
      width: 222px;
      height: 48px;
      border: 1px  solid #e0e0e0;
-     border-right:0 ;
      padding: 0 10px ;
      float: left;
      /*display: block;*/
@@ -244,30 +243,33 @@ image{
 }
  .search-btn {
      background: #ffffff;
-     width: 52px;
+     width: 55px;
      height: 50px;
      float: left;
      border: 1px  solid #e0e0e0;
      border-left:0 ;
      cursor: pointer; /*鼠标变小手;*/
      position: relative;
-     background: transparent;
-
-
+     background: transparent; /*透明色背景*/
+     z-index: 1;
  }
+.search-btn:hover +i{  /*btn划过让后面的兄弟元素变色*/
+    color: #fff;
+    background: #ff6700;
+}
 
 .icon-search{
     position: absolute;
-    right: 19px;
-    top: 18px;
-
+    right: 0;
+    top: 0;
+    width: 55px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    text-align: center;
    }
-/*.search i:hover{*/
-    /*background: #ff6700;*/
-    /*display: block;*/
-/**/
-/**/
-/*}*/
+
+
 
 
 /*header结束*/
