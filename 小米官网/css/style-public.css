@@ -177,6 +177,7 @@ image{
     display: none;
     overflow: hidden;
     /*溢出隐藏*/
+    z-index: 2;
 }
 .sub-menu ul{
     overflow: hidden;
@@ -283,6 +284,9 @@ image{
 
 
 /*slider开始*/
+.slider-box{
+    position: relative;
+}
 .slider{
     position: relative;
     height: 460px;
@@ -350,4 +354,33 @@ image{
     bottom: 20px;
 }
 
+
+
+.list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 20px  0;
+    width: 234px;
+    background: rgba(0,0,0,0.6)
+}
+
+.item a{
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    padding-left:30px ;
+    color: #ffffff;
+    font-size: 14px;
+}
+.item a:hover{
+    background: #ff6700;
+}
+.icon-arrow{
+    float: right;
+    width: 16px;
+    height: 16px;
+    margin-right:25px ;
+}
 /*slider结束*/
