@@ -17,6 +17,14 @@ image{
     margin: 0 auto;
 }
 
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+
 
 /*公共样式*/
 /*site-ba-bar开始*/
@@ -67,6 +75,7 @@ image{
     float:right;
 }
 .cart{
+
     width: 120px;
     position: relative;
     text-align: center;
@@ -90,15 +99,16 @@ image{
         height: 85px;
     }
 }
-.cart-box{
+.cart-box {
     width: 300px;
     height: 0px;
-    padding-top; 15px;
+    padding-top;
+    15px;
     background: #ffffff;
     border: 1px solid #e0e0e0 \9;
-    box-shadow: 0 2px 10px rgba(0,0,0,0,15);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0, 15);
     position: absolute;
-    right:0;
+    right: 0;
     top: 40px;
     display: none;
 
@@ -258,7 +268,7 @@ image{
     background: #ff6700;
 }
 
-.icon-search{
+.icon-fangdajing{
     position: absolute;
     right: 0;
     top: 0;
@@ -269,7 +279,75 @@ image{
     text-align: center;
    }
 
-
-
-
 /*header结束*/
+
+
+/*slider开始*/
+.slider{
+    position: relative;
+    height: 460px;
+}
+
+.img-box img{
+    width: 1226px;
+    height:460px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.prev-btn {
+    width: 41px;
+    height: 70px;
+    position: absolute;
+    left: 234px;
+    top: 50%;
+    margin-top: -35px;
+    font-size: 50px;
+    color: #757575;
+    line-height: 69px;
+    text-align: center;
+    border-radius:4px ; /*轮廓角变圆*/
+}
+.prev-btn:hover{
+    background: rgba(0,0,0,0.7);
+    color: #ffffff;
+}
+.next-btn{
+    width: 41px;
+    height: 70px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    margin-top: -35px;
+    font-size: 50px;
+    color: #757575;
+    line-height: 69px;
+    text-align: center;
+    border-radius:4px ; /*轮廓角变圆*/
+}
+.next-btn:hover{
+    background: rgba(0,0,0,0.75);
+    color: #ffffff;
+}
+.btns li{
+    height: 6px;
+    width: 6px;
+    background: #232429;
+    border: 2px solid #65666b;
+    float: left;
+    margin-right: 5px;
+    border-radius:50% ;/*轮廓角变圆*/
+    cursor: pointer; /*鼠标变小手;*/
+}
+.btns li:hover{
+    background: #898a8e;
+    border: 2px solid #4f4e56;
+}
+.btns{
+    width: 120px;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+
+/*slider结束*/
