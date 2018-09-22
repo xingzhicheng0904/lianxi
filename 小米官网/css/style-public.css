@@ -283,7 +283,7 @@ image{
 /*header结束*/
 
 
-/*slider开始*/
+/*轮播图开始*/
 .slider-box{
     position: relative;
 }
@@ -427,4 +427,79 @@ image{
 
 }
 
-/*slider结束*/
+/*轮播图结束*/
+
+
+/*频道列表开始*/
+.channel-box{
+    margin-top: 14px;
+}
+.channel-list{
+    width: 234px;
+    height: 170px;
+    background: #5f5750;
+    float: left; /*解决了沾满整行*/
+
+}
+.channel-list ul{
+    overflow: hidden;
+    padding: 3px 3px 0;
+
+}
+.channel-list li{
+    width: 76px;
+    height: 82px;
+    float: left;
+    position: relative;
+}
+.channel-list li:hover i,.channel-list li:hover span{
+    color: #fffcf9;
+}
+.channel-list i{
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    color: rgba(255,255,255,0.7);
+    margin-top:18px  ;
+}
+.channel-list span{
+    display: block;
+    text-align: center;
+    color:  rgba(255,255,255,0.7);
+    font-size: 12px;
+}
+
+/*使用伪类元素*/
+li.right::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 9px;
+    width: 1px;
+    height: 64px;
+    background: #665e57;
+}
+li.bottom::before {
+    content: "";
+    width: 64px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    background: #665e57;
+}
+.promo-list{
+    float: left;
+}
+.promo-list a{
+    float: left;
+}
+.promo-list img{
+    width: 316px;
+    height: 170px;
+    margin-left: 15px;
+}
+.promo-list a .list-one{
+    margin-left: 14px;
+}
+/*频道列表结束*/
