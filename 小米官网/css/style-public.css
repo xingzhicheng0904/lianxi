@@ -366,7 +366,7 @@ image{
     background: rgba(0,0,0,0.6)
 }
 
-.item a{
+.item>a{
     display: block;
     height: 42px;
     line-height: 42px;
@@ -374,7 +374,7 @@ image{
     color: #ffffff;
     font-size: 14px;
 }
-.item a:hover{
+.item>a:hover{
     background: #ff6700;
 }
 .icon-arrow{
@@ -383,4 +383,48 @@ image{
     height: 16px;
     margin-right:25px ;
 }
+.sub-list{
+    position: absolute;
+    top: 0;
+    left:234px ;
+    background:#ffffff;
+    height: 100%;
+    display: none;
+    border-top:1px solid #e0e0e0;
+    border-shadow:5px 3px 18px 2px rgba(0,0,0,0.18) ;
+}
+.sub-list-4{
+    width: 992px;
+}
+.sub-list-4 ul{
+    float: left;
+    width: 248px;
+}
+.sub-list-4 ul li{
+    padding: 18px 20px;
+    overflow: hidden;
+}
+.list-img{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle; /*图片与文字对齐*/
+}
+.list-title{
+    font-size: 14px;
+    color: #333;
+}
+.list-img-box{
+    float: left;
+    height: 100%;
+    width: 132px;
+}
+.list-img-box:hover span{
+    color: #ff6700;
+
+}
+.item:hover .sub-list{  /*滑动item时找到sub-list*/
+    display: block;
+
+}
+
 /*slider结束*/
