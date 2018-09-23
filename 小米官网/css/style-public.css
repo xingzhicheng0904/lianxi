@@ -641,7 +641,10 @@ li.bottom::before {
 /*家电开始*/
 .content-box{
     background: #f5f5f5;
-    padding-top:60px ;
+    margin-top:15px ;
+}
+.homeelec-box{
+    position: relative;
 }
 .homeelec-title{
     font-size: 22px;
@@ -650,5 +653,52 @@ li.bottom::before {
     height: 58px;
     line-height: 58px;
 
+
+}
+.tab-btns{
+    color: #424242;
+    font-size: 16px;
+    position: absolute;
+    top: 18px;;
+    right: 0;
+}
+.tab-btns li{
+    float: left;
+    margin-left: 30px;
+}
+.tab-btns .active{
+    color: #ff6700;
+    border-bottom:2px solid #ff6700 ;
+}
+.box-left{
+    float: left;
+}
+.box-left .box-left01{
+    width: 234px;
+    height: 650px;
+}
+.box-right{
+    float: left;
+    width: 992px;
+}
+.box-right .box-right01{
+    width: 160px;
+    height: 160px;
+}
+
+.box-right .item-bottom{
+    margin-bottom: none;
+}
+.box-right li{
+    width: 234px;
+    height: 300px;
+    background: #fafafa;
+    padding-top: 39px;
+    margin-left: 14px;
+    margin-right: 0;
+    float: left;
+}
+.box-bd{
+    overflow: hidden;
 }
 /*家电结束*/
