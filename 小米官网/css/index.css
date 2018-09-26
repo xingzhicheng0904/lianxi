@@ -620,7 +620,8 @@ li.bottom::before {
 /*家电开始*/
 .content-box{
     background: #f5f5f5;
-    padding-top: 60px;
+    height: 2100px;
+
 
 }
 .homeelec-box{
@@ -908,3 +909,107 @@ i:hover{
 }
 
 /*内容结束*/
+/*footer开始*/
+.footer{
+    margin-top: 20px;
+    overflow: hidden;
+}
+.foot-service{
+    height: 26px;
+    padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.foot-item{
+    width: 243px;
+    float: left;
+    font-size: 16px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-left: 1px solid #e0e0e0;
+}
+.foot-item:hover{
+    color: #ff6700;
+    cursor: pointer;
+}
+.wrapper .first-item{
+    border-left:none;
+}
+.foot-links{
+    padding: 40px 0;
+    height: 192px;
+    width: 1226px;
+
+}
+.col-links{
+    float: left;
+    width: 160px;
+    height: 112px;
+    margin: 0;
+}
+.col-links dt{
+    margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+.col-links dd{
+    margin: 10px 0 0;
+    font-size: 12px;
+
+}
+.col-links a{
+    color: #757575;
+}
+.col-links a:hover{
+    color: #ff6700;
+}
+.foot-links-service{
+    width: 974px;
+    float: left;
+}
+.col-contact {
+    width: 251px;
+    height: 112px;
+    text-align: center;
+    color: #616161;
+    float: left;
+    border-left: 1px solid #e0e0e0;
+}
+.col-contact .iphone{
+    margin: 0 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+}
+.col-contact p {
+    margin: 0 0 16px;
+    font-size: 12px;
+}
+
+
+.col-contact .btn-line-primary{
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #ff6700;
+}
+
+.btn-small{
+    color: #ff6700;
+    width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    display: inline-block;
+
+}
+ .btn-small:hover{
+    color: #fff;
+    background-color: #f25807;
+    border-color: #f25807;
+}
+/*footer结束*/
+
+body{
+    height: 10000000px;
+}
