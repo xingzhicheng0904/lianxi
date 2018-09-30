@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function isleap(year){
+        return( (year%4==0 && year%100!=0) || year%400==0)?true:false;
+
+//        if(year%4==0 && year&100!=0 || year%400==0){
+//            return true;
+//        }
+//        return false;
+    }
+    var date = new Date();
+    var year = date.getFullYear();
+    var str=isleap(year)?"今年是闰年":"今年不是闰年";
+    console.log(str);
+
+//    console.log(isleap(2000))
+
+</script>
+
+
+</body>
+</html>
