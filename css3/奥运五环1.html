@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        /*使用伪类元素，，在div中在套一个元素实现透明*/
+        .circle,  .circle::after{
+            width: 200px;
+            height: 200px;
+            border: 10px solid #000;
+            border-radius:50% ;
+            position: absolute;
+        }
+        .circle::after{
+            content: '';
+            top: -10px;
+            left: -10px;
+
+        }
+
+
+        .blue{
+            left: 0;
+            top: 0;
+            border-color:blue ;
+        }
+        .blue::after{
+            border-color:blue ;
+            z-index:1;
+            border-bottom-color: transparent;
+
+        }
+        .black{
+            border-color:black;
+            position: absolute;
+            top: 0;
+            left:230px;
+        }
+        .black::after {
+            border-color:black;
+            z-index: 1;
+            border-left-color: transparent;
+         }
+        .red{
+            border-color:red;
+            position: absolute;
+            top: 0;
+            left:460px;
+        }
+        .red::after {
+            border-color:red;
+            z-index: 1;
+            border-left-color: transparent;
+        }
+        .yellow{
+            border-color:yellow;
+            position: absolute;
+            top: 110px;
+            left:110px;
+        }
+        .yellow::after {
+            border-color:yellow;
+        }
+        .green{
+            border-color:green;
+            position: absolute;
+            top: 110px;
+            left:340px;
+        }
+        .green::after {
+            border-color:green;
+        }
+    </style>
+</head>
+<body>
+<div class="circle blue"></div>
+<div class="circle black"></div>
+<div class="circle red"></div>
+<div class="circle yellow"></div>
+<div class="circle green"></div>
+
+</body>
+</html>
